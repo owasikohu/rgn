@@ -1,6 +1,6 @@
 // グローバル変数 - p5.js
-const widthRatio = 16;
-const heightRatio = 9;
+const widthRatio = 1;
+const heightRatio = 1;
 const aspectRatio = widthRatio / heightRatio;
 
 // グローバル変数 - ゲームロジック
@@ -24,7 +24,7 @@ function draw() {
   drawStones();
   drawCursor();
 }
-
+/* 
 function drawBoard() {
       // 木の色の背景（正方形）
       fill(240, 210, 160);
@@ -117,14 +117,16 @@ function drawStones() {
   }
 }
 
-
+*/
+/*
 // ウィンドウリサイズ対応
 function windowResized() {
   const [w, h] = getMaxSize();
   resizeCanvas(w, h);
 }
-
+*/
 // アスペクト比を維持した最大キャンバスサイズ
+/*
 function getMaxSize() {
   let w = windowWidth;
   let h = windowHeight;
@@ -135,7 +137,8 @@ function getMaxSize() {
   }
   return [w, h];
 }
-
+*/
+/*
 function drawCursor() {
   let size = min(width, height) * 0.85;
   const cellSize = size / (masu - 1);
@@ -164,7 +167,7 @@ function drawCursor() {
 
   strokeWeight(1);
 }
-
+*/
 function keyPressed() {
   // Player1 - WASD
   if (key === 'a') cursor1.x = max(0, cursor1.x - 1);

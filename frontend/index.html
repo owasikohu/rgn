@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8"/>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.7/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.7/lib/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="./sketch.js"></script>
+    <script src="./graphics.js"></script>
+    <script src="./game.js"></script>
+    <script src="./net.js"></script>
+  </head>
+  <body>
+    <h1>量子五目並べ</h1>
+    <main>
+    </main>
+    <h2>ルール</h2>
+    <ul>
+      <li>盤面は15x15</li>
+      <li>石は4種類：黒90%（白10%）/ 黒70%（白30%）/ 黒30%（白70%）/ 黒10%（90%）</li>
+      <li>先手の黒は、黒90%（白10%）/ 黒70%（白30%）の石を使用し、これらを交互に置くことができる</li>
+      <li>後手の白は、黒30%（白70%）/ 黒10%（白90%）の石を使用し、これらを交互に置くことができる</li>
+      <li>それぞれのプレイヤーは五回まで観測を行え、観測を行うと盤上の石が黒/白に確定する</li>
+      <li>観測後に5連以上ができていたプレイヤーが勝利。同時に成立した場合、観測者が勝利する</li>
+      <li>不成立ならすべての石をもとの未確定の状態に戻す</li>
+    </ul>
+  </body>
+</html>
