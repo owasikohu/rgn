@@ -21,3 +21,5 @@ def init_db():
         room_id TEXT,
         name TEXT,   
     )""")
+
+init_db()
